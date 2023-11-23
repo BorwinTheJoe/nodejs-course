@@ -6,8 +6,10 @@ const rs = fs.createReadStream(path.join(__dirname,'files','lorem.txt'), {encodi
 
 const ws = fs.createWriteStream(path.join(__dirname,'files','new-lorem.txt'));
 
- rs.on('data', (dataChunk)  => {
+/* rs.on('data', (dataChunk)  => {
   ws.write(dataChunk);
   console.log(dataChunk);
-});
+}); */
+
+rs.pipe(ws);
 
