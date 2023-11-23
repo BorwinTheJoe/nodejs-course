@@ -1,0 +1,22 @@
+{
+  "name": "tut03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BorwinTheJoe/nodejs-course.git"
+  },
+  "author": "BorwinTheJoe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BorwinTheJoe/nodejs-course/issues"
+  },
+  "homepage": "https://github.com/BorwinTheJoe/nodejs-course#readme",
+  "dependencies": {
+    "date-fns": "^2.30.0"
+  }
+}
