@@ -5,6 +5,8 @@ const fileOps = async () => {
   try {
     const data = await fsPromises.readFile(path.join(__dirname, 'files', 'starter.txt'), 'utf8');
     console.log(data);
+    //Unlink is deleting a file
+    await fsPromises.unlink(path.join(__dirname, 'files', 'promiseComplete.txt'));
     await fsPromises.writeFile(path.join(__dirname, 'files', 'promiseWrite.txt'), data);
     await fsPromises.appendFile(path.join(__dirname, 'files', 'promiseWrite.txt'), '\n\nNice to meet you.');
     await fsPromises.rename(path.join(__dirname, 'files', 'promiseWrite.txt'), path.join(__dirname, 'files', 'promiseComplete.txt'));
