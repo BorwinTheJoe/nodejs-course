@@ -2,16 +2,18 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const PORT = process.env.PORT || 8080;
-// When the app.get url request is:
-// ^/$ = Just the forward slash
-// | = OR
-// index(.html)?
-// where (.html)? means .html is Optional.
+
+// * is for Anything.
 app.get('/*', (req, res, next) => {
     console.log(req.url, req.method);
     next();
 });
 
+// When the app.get url request is:
+// ^/$ = Just the forward slash
+// | = OR
+// index(.html)?
+// where (.html)? means .html is Optional.
 app.get('^/$|/index(.html)?', (req, res) => {
     //res.sendFile('./views/index.html', { root: __dirname });
     res.sendFile(path.join(__dirname, 'views', 'index.html'));
@@ -52,7 +54,6 @@ const three = (req, res) => {
 
 app.get('/chain(.html)?', [one, two, three]);
 
-// * is for Anything.
 app.get('/*', (req, res) => {
     // we add status(404) because it's supposed to be our error 404 status code.
     res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
