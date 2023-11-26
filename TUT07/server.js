@@ -1,16 +1,11 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const logEvents = require('./middleware/logEvents');
+const { logger } = require('./middleware/logEvents');
 const PORT = process.env.PORT || 8080;
 
 // Custom-made middleware logger.
-app.use((req, res, next) => {
-    logEvents(`${req.method}\t${req.headers.origin}\t${req.url}`, 'reqLog.txt');
-    console.log(`${req.method} ${req.path}`);
-    next();
-});
-
+app.use(logger);
 
 // built-in middleware to handle url-encoded data. Like form data.
 app.use(express.urlencoded({ extended: false }));
