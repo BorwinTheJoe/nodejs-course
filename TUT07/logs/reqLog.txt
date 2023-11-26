@@ -5,4 +5,4 @@
 2023/11/23	18:36:00	783daedd-8b5e-4213-8234-9826693f7136	/new-page.html	GET
 2023/11/23	18:36:00	12760b15-9dea-43eb-8e68-559b6e235ff9	/css/style.css	GET
 2023/11/23	18:36:00	5b43f9e7-d3f8-4fea-9735-e1d0f66862fe	/img/img1.jpg	GET
-2023/11/26	16:19:50	38498ac1-8ebf-4a18-968f-ececeac8ad5d	GET	undefined	/2023/11/26	16:19:50	01dcfe93-e380-4b6c-a8b2-39dfb298e1a8	GET	undefined	/css/style.css
+2023/11/26	16:19:50	38498ac1-8ebf-4a18-968f-ececeac8ad5d	GET	undefined	/2023/11/26	16:19:50	01dcfe93-e380-4b6c-a8b2-39dfb298e1a8	GET	undefined	/css/style.css2023/11/26	16:22:03	384cea28-b59b-4a11-b680-7829ecf8604f	GET	undefined	/2023/11/26	16:22:03	64144a00-f253-4c3d-85bf-709730ffc4eb	GET	undefined	/css/style.css
