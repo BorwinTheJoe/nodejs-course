@@ -1,8 +1,2 @@
-2023/11/23	18:34:38	7cb5a93b-9222-4b63-9126-df67a58edfa0	/new-page.html	GET
-2023/11/23	18:34:38	48a17e4d-cf3b-46e4-b393-982ce4a9122f	/css/style.css	GET
-2023/11/23	18:34:38	412dd07e-0cc2-481d-ba5a-d969cae877ac	/img/img1.jpg	GET
-2023/11/23	18:35:15	dbad58a9-9472-418c-a9f0-4cb7e1a5ea0d	/new-page.html	GET
-2023/11/23	18:36:00	783daedd-8b5e-4213-8234-9826693f7136	/new-page.html	GET
-2023/11/23	18:36:00	12760b15-9dea-43eb-8e68-559b6e235ff9	/css/style.css	GET
-2023/11/23	18:36:00	5b43f9e7-d3f8-4fea-9735-e1d0f66862fe	/img/img1.jpg	GET
-2023/11/26	16:19:50	38498ac1-8ebf-4a18-968f-ececeac8ad5d	GET	undefined	/2023/11/26	16:19:50	01dcfe93-e380-4b6c-a8b2-39dfb298e1a8	GET	undefined	/css/style.css2023/11/26	16:22:03	384cea28-b59b-4a11-b680-7829ecf8604f	GET	undefined	/2023/11/26	16:22:03	64144a00-f253-4c3d-85bf-709730ffc4eb	GET	undefined	/css/style.css
+2023/11/26	16:24:00	b0985d7b-b874-4e6a-8873-63bf7017c3e6	GET	undefined	/
+2023/11/26	16:24:00	f9b6cfce-bcca-484b-83b7-6c3ed5dd5bb8	GET	undefined	/css/style.css
