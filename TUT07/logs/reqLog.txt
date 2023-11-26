@@ -14,3 +14,5 @@
 2023/11/26	16:39:01	0dbaad8a-970d-4f54-a872-939647be46a5	OPTIONS	https://www.google.com	/
 2023/11/26	16:39:01	d7e0e5f0-38c5-47f3-b3a0-ecd76b26e50a	GET	https://www.google.com	/
 2023/11/26	16:41:22	d0cda1de-6c78-4e8a-a96e-699e613418cf	GET	undefined	/
+2023/11/26	16:42:21	cc7fb5e6-5d44-4031-ad01-93e39da06fff	GET	undefined	/
+2023/11/26	16:42:21	dd74016d-28a7-4056-8faf-d4fb352ce99e	GET	undefined	/css/style.css
