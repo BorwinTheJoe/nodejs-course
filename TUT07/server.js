@@ -9,15 +9,24 @@ const PORT = process.env.PORT || 8080;
 app.use(logger);
 
 // Stands for Cross Origin Resource Sharing.
-app.use(cors());
+const whitelist = ['https://www.yoursite.com', 'http://127.0.0.1:5500', 'http://localhost:8080'];
+const corsOptions = {
+    origin: (origin, callback) => {
+        if (whitelist.indexOf(origin) !== -1) { // if domain exists in the whitelist 
+            callback(null, true);
+        } else {
+            callback (new Error('Not allowed by CORS'));
+        }
+    },
+    optionsSuccessStatus: 200
+}
+app.use(cors(corsOptions));
 
 // built-in middleware to handle url-encoded data. 
 // Like form data.
 app.use(express.urlencoded({ extended: false }));
-
 // built-in middleware for serving json files.
 app.use(express.json());
-
 // serve static files
 // (will route into public folder to search for those files)
 app.use(express.static(path.join(__dirname, '/public')));
@@ -27,7 +36,6 @@ app.get('/*', (req, res, next) => {
     console.log(req.url, req.method);
     next();
 });
-
 // When the app.get url request is:
 // ^/$ = Just the forward slash
 // | = OR
