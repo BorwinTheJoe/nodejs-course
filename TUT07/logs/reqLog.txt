@@ -1,2 +1,7 @@
 2023/11/26	16:24:00	b0985d7b-b874-4e6a-8873-63bf7017c3e6	GET	undefined	/
 2023/11/26	16:24:00	f9b6cfce-bcca-484b-83b7-6c3ed5dd5bb8	GET	undefined	/css/style.css
+2023/11/26	16:27:57	2a04e1c9-b39e-4b2a-a4b9-bedb18e3ac10	GET	undefined	/new-page.html
+2023/11/26	16:27:57	2ff848d4-20b1-43fb-86ba-31ac08af9537	GET	undefined	/css/style.css
+2023/11/26	16:27:57	7f231a46-9d76-47bd-bdcf-9705e5bc26b3	GET	undefined	/img/img1.jpg
+2023/11/26	16:29:01	e0ea87dc-4982-45dc-938e-433dd25367c6	OPTIONS	https://www.google.com	/
+2023/11/26	16:29:01	4179056f-df24-418a-babc-b05d18190ea9	GET	https://www.google.com	/
