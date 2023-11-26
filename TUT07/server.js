@@ -12,7 +12,7 @@ app.use(logger);
 const whitelist = ['https://www.yoursite.com', 'http://127.0.0.1:5500', 'http://localhost:8080'];
 const corsOptions = {
     origin: (origin, callback) => {
-        if (whitelist.indexOf(origin) !== -1) { // if domain exists in the whitelist 
+        if (whitelist.indexOf(origin) !== -1 || !origin) { // if domain exists in the whitelist or is Undefined
             callback(null, true);
         } else {
             callback (new Error('Not allowed by CORS'));
@@ -84,6 +84,11 @@ app.get('/chain(.html)?', [one, two, three]);
 app.get('/*', (req, res) => {
     // we add status(404) because it's supposed to be our error 404 status code.
     res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
+});
+
+app.use(function (err, req, res, next) {
+    console.error(err.stack);
+    res.status(500).send(err.message);
 });
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
