@@ -3,6 +3,12 @@ const app = express();
 const path = require('path');
 const PORT = process.env.PORT || 8080;
 
+// Custom-made middleware logger.
+app.use((req, res, next) => {
+    console.log(`${request.method} ${req.path}`);
+    next();
+});
+
 
 // built-in middleware to handle url-encoded data. Like form data.
 app.use(express.urlencoded({ extended: false }));
