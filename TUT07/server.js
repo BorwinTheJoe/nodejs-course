@@ -3,6 +3,17 @@ const app = express();
 const path = require('path');
 const PORT = process.env.PORT || 8080;
 
+
+// built-in middleware to handle url-encoded data. Like form data.
+app.use(express.urlencoded({ extended: false }));
+
+// built-in middleware for serving json files.
+app.use(express.json());
+
+// serve static files
+// (will route into public folder to search for those files)
+app.use(express.static(path.join(__dirname, '/public')));
+
 // * is for Anything.
 app.get('/*', (req, res, next) => {
     console.log(req.url, req.method);
