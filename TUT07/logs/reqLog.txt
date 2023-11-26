@@ -5,3 +5,5 @@
 2023/11/26	16:27:57	7f231a46-9d76-47bd-bdcf-9705e5bc26b3	GET	undefined	/img/img1.jpg
 2023/11/26	16:29:01	e0ea87dc-4982-45dc-938e-433dd25367c6	OPTIONS	https://www.google.com	/
 2023/11/26	16:29:01	4179056f-df24-418a-babc-b05d18190ea9	GET	https://www.google.com	/
+2023/11/26	16:31:45	b724c2d7-8c28-4d88-bf27-e0b4f6af4a65	OPTIONS	https://www.google.com	/
+2023/11/26	16:31:45	9e717e80-e20c-48b1-91e2-f6fe5009c14f	GET	https://www.google.com	/

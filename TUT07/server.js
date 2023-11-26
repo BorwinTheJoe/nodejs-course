@@ -1,13 +1,18 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const cors = require('cors');
 const { logger } = require('./middleware/logEvents');
 const PORT = process.env.PORT || 8080;
 
 // Custom-made middleware logger.
 app.use(logger);
 
-// built-in middleware to handle url-encoded data. Like form data.
+// Stands for Cross Origin Resource Sharing.
+app.use(cors());
+
+// built-in middleware to handle url-encoded data. 
+// Like form data.
 app.use(express.urlencoded({ extended: false }));
 
 // built-in middleware for serving json files.
