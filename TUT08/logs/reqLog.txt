@@ -23,3 +23,12 @@
 2023/11/28	20:56:43	3cbe4a96-2696-444b-b6ca-f21055986e5c	GET	undefined	/css/style.css
 2023/11/28	20:57:41	fcfd1764-33a7-467b-beca-03aefaa48851	GET	undefined	/subdir/any
 2023/11/28	20:57:41	0c4c8939-5464-484c-bc33-8feb6f100c36	GET	undefined	/subdir/css/style.css
+2023/11/28	21:03:35	a8fc7636-dc0e-4d93-a9a7-7e407610b260	GET	undefined	/subdir/any
+2023/11/28	21:03:35	7515a5c7-bcc8-42b8-8959-3f7c47c06a02	GET	undefined	/subdir/css/style.css
+2023/11/28	21:03:40	153a5f06-7980-4424-a1a7-187fbe628522	GET	undefined	/index
+2023/11/28	21:03:40	d62b2006-2b53-4da6-af9a-3c6a8649fbd5	GET	undefined	/css/style.css
+2023/11/28	21:14:22	a698295a-186e-4004-99b4-c10035b75caf	GET	undefined	/employees
+2023/11/28	21:15:20	6fdbc419-9e5c-494d-8f7f-896e5acee12a	POST	undefined	/employees
+2023/11/28	21:16:42	c9c1b3dd-82d3-4063-9286-bd8931d1cddd	PUT	undefined	/employees
+2023/11/28	21:17:12	fc7eedd2-1829-43c8-bdc9-e523bb8ba7c4	DELETE	undefined	/employees
+2023/11/28	21:17:37	345c6815-0baf-471b-802f-eabc4aecde67	GET	undefined	/employees/1

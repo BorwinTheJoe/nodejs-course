@@ -35,12 +35,12 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, '/public')));
 app.use('/subdir', express.static(path.join(__dirname, '/public')));
 
-//Routes any subdirectory request to the routes subdir.
+//Those are out Routes. They route things based off of their directories.
 app.use('/', require('./routes/root'));
 app.use('/subdir', require('./routes/subdir'));
+app.use('/employees', require('./routes/api/employees'));
 
 
-// app.use('/'); DOES NOT USE REGEX!!
 // using * means that ANYTHING that gets here gets the 404.html
 app.all('*', (req, res) => {
     // we add status(404) because it's supposed to be our error 404 status code.
