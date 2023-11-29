@@ -35,3 +35,9 @@
 2023/11/29	20:04:37	26ded847-65b6-4e04-a423-e1e243cce980	GET	undefined	/model/employees
 2023/11/29	20:04:37	8fe72425-c1b2-4743-84d5-c92cdd5f48da	GET	undefined	/model/css/style.css
 2023/11/29	20:05:02	865f4f0c-db0a-4a96-aeea-978182309e85	GET	undefined	/employees
+2023/11/29	20:13:44	3a1f5c2b-0d4c-4f99-8fcf-da961d3a9f31	GET	undefined	/employees
+2023/11/29	20:13:56	e83bbd8a-4b4e-454a-8bb9-10ac5ea4aca2	GET	undefined	/employees/1
+2023/11/29	20:13:59	f41bfc72-855e-4bc0-af3e-32bee2547da1	DELETE	undefined	/employees
+2023/11/29	20:14:04	2837bdef-001b-4340-b937-276c3850ca78	PUT	undefined	/employees
+2023/11/29	20:14:08	a83c5558-0e03-4969-be8e-771431efe72d	POST	undefined	/employees
+2023/11/29	20:14:11	c627a48d-6bc7-4084-86f6-f317b8c07f0b	GET	undefined	/employees

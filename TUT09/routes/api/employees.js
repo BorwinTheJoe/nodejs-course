@@ -1,38 +1,20 @@
 const express = require('express');
 const router = express.Router();
-const path = require ('path');
-const data = {};
+const employeesController = require('../../controllers/employeesController');
 
-//in future learning on how to connect to databases.
-data.employees = require('../../model/employees.json');
 
 router.route('/')
     //requesting the employees
-    .get((req,res) => {
-        res.json(data.employees);
-    })
+    .get(employeesController.getAllEmployees)
     //posting a new employee
-    .post((req,res) => {
-        res.json({
-            "firstname": req.body.firstname,
-            "lastname": req.body.lastname
-        });
-    })
+    .post(employeesController.createNewEmployee)
     //updating an existing employee
-    .put((req,res) => {
-        res.json({
-            "firstname": req.body.firstname,
-            "lastname": req.body.lastname
-        });
-    })
-    .delete((req,res) => {
-        res.json({ "id": req.body.id })
-    });
+    .put(employeesController.updateEmployee)
+    //deleting an existing employee
+    .delete(employeesController.deleteEmployee);
 
 router.route('/:id')
-    .get((req,res) => {
-        res.json({ "id": req.params.id })
-    });
+    .get(employeesController.getEmployee);
 
 
 module.exports = router;

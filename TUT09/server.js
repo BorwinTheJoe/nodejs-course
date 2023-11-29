@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const cors = require('cors');
+const corsOptions = require('./config/corsOptions');
 const { logger } = require('./middleware/logEvents');
 const errorHandler = require ('./middleware/errorHandler');
 const PORT = process.env.PORT || 8080;
@@ -10,21 +11,9 @@ const PORT = process.env.PORT || 8080;
 app.use(logger);
 
 // Stands for Cross Origin Resource Sharing.
-const whitelist = ['https://www.yoursite.com', 'http://127.0.0.1:5500', 'http://localhost:8080'];
-const corsOptions = {
-    origin: (origin, callback) => {
-        if (whitelist.indexOf(origin) !== -1 || !origin) { // if domain exists in the whitelist or is Undefined
-            callback(null, true);
-        } else {
-            callback (new Error('Not allowed by CORS'));
-        }
-    },
-    optionsSuccessStatus: 200
-}
 app.use(cors(corsOptions));
 
-// built-in middleware to handle url-encoded data. 
-// Like form data.
+// built-in middleware to handle url-encoded form data. 
 app.use(express.urlencoded({ extended: false }));
 
 // built-in middleware for serving json files.
@@ -33,13 +22,10 @@ app.use(express.json());
 // serve static files
 // (will route into public folder to search for those files)
 app.use(express.static(path.join(__dirname, '/public')));
-app.use('/subdir', express.static(path.join(__dirname, '/public')));
 
-//Those are out Routes. They route things based off of their directories.
+//Those are our Routes. They route things based off of their directories.
 app.use('/', require('./routes/root'));
-app.use('/subdir', require('./routes/subdir'));
 app.use('/employees', require('./routes/api/employees'));
-
 
 // using * means that ANYTHING that gets here gets the 404.html
 app.all('*', (req, res) => {
