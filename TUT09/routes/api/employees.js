@@ -4,7 +4,7 @@ const path = require ('path');
 const data = {};
 
 //in future learning on how to connect to databases.
-data.employees = require('../../data/employees.json');
+data.employees = require('../../model/employees.json');
 
 router.route('/')
     //requesting the employees

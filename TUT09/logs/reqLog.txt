@@ -32,3 +32,6 @@
 2023/11/28	21:16:42	c9c1b3dd-82d3-4063-9286-bd8931d1cddd	PUT	undefined	/employees
 2023/11/28	21:17:12	fc7eedd2-1829-43c8-bdc9-e523bb8ba7c4	DELETE	undefined	/employees
 2023/11/28	21:17:37	345c6815-0baf-471b-802f-eabc4aecde67	GET	undefined	/employees/1
+2023/11/29	20:04:37	26ded847-65b6-4e04-a423-e1e243cce980	GET	undefined	/model/employees
+2023/11/29	20:04:37	8fe72425-c1b2-4743-84d5-c92cdd5f48da	GET	undefined	/model/css/style.css
+2023/11/29	20:05:02	865f4f0c-db0a-4a96-aeea-978182309e85	GET	undefined	/employees
