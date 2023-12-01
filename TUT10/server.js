@@ -23,8 +23,10 @@ app.use(express.json());
 // (will route into public folder to search for those files)
 app.use(express.static(path.join(__dirname, '/public')));
 
-//Those are our Routes. They route things based off of their directories.
+// ROUTES
+// They route things based off of their directories.
 app.use('/', require('./routes/root'));
+app.use('/register', require('./routes/register'));
 app.use('/employees', require('./routes/api/employees'));
 
 // using * means that ANYTHING that gets here gets the 404.html
