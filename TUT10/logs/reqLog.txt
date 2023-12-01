@@ -7,3 +7,6 @@
 2023/12/01	23:14:30	e12c58c1-27c0-48db-a1fe-11abbdf7bb76	POST	undefined	/register
 2023/12/01	23:15:19	ae2c090b-db8e-45dd-8983-7110dee0256e	POST	undefined	/register
 2023/12/01	23:17:01	813f546c-cd5b-49ad-989b-04484aae7928	POST	undefined	/register
+2023/12/01	23:25:24	dc3564c7-1f59-49be-96f3-b3ce09734ab2	POST	undefined	/auth
+2023/12/01	23:26:27	bd9a570a-9a85-43d5-9fc0-9c4046b041e9	POST	undefined	/auth
+2023/12/01	23:26:45	95f6b5a5-8de7-4856-a79e-84dce54218f1	POST	undefined	/register
