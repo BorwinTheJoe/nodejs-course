@@ -13,7 +13,7 @@ const handleLogin = async (req, res) => {
     // Evaluating password
     const match = await bcrypt.compare(pwd, foundUser.password);
     if (match) {
-        // create JWTs (What is a JWT?)
+        // create JWTs (Json Web Tokens)
         res.json({ 'message': `User ${user} is Logged In!`});
     } else {
         res.sendStatus(401);
