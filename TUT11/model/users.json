@@ -1,1 +1,1 @@
-[{"username":"John001","password":"$2b$10$ZtqA/Qjc27doVzvTnUJl9eYS7a/aJApWavTXgN/XgOyF2z7.ZYL02"},{"username":"John002","password":"$2b$10$I/mSdkwWJQTKeQuFeEM34.PTPkxIyuRlrO7lkHEJcDE5AHSWB.XjW"}]
+[{"username":"John002","password":"$2b$10$I/mSdkwWJQTKeQuFeEM34.PTPkxIyuRlrO7lkHEJcDE5AHSWB.XjW"},{"username":"John001","password":"$2b$10$ZtqA/Qjc27doVzvTnUJl9eYS7a/aJApWavTXgN/XgOyF2z7.ZYL02","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvaG4wMDEiLCJpYXQiOjE3MDE2MzMwODMsImV4cCI6MTcwMTcxOTQ4M30.6-TvYgH1K6_w12QM5vXELnsyawAbC762Cy_ugdzCx4E"}]
