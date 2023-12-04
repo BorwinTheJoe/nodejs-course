@@ -2,8 +2,6 @@ const verifyRoles = (...allowedRoles) => {
     return (req, res, next) => {
         if (!req?.roles) return res.sendStatus(401);
         const rolesArray = [...allowedRoles];
-        console.log(rolesArray);
-        console.log(req.roles);
         // Mapping roles acquired from the JWT which is assigned in the verified JWT.
         // Comparing it with a roles array that will be passed into this route - depending on what destination is requested.
         // if there's any trues (aka. the user has a role that has access), we find it and return true.
