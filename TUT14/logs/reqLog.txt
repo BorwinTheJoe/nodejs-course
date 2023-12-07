@@ -101,3 +101,7 @@
 2023/12/04	15:22:38	a7cb2f40-d669-4ff6-a957-eed8e8b681f0	POST	undefined	/employees
 2023/12/04	15:22:39	f57ea73d-27ce-44f5-a62c-06b61d538db7	POST	undefined	/employees
 2023/12/04	15:22:41	78cb1adc-21ad-4bbd-a162-4333346ba150	DELETE	undefined	/employees
+2023/12/07	19:13:53	42141736-0409-46f7-bd3e-0e198a732cb2	POST	undefined	/register
+2023/12/07	19:14:42	00e41947-882d-451a-9d30-60dfd4bee3d2	POST	undefined	/auth
+2023/12/07	19:15:19	822c95d3-ae78-48a5-832d-8ff6d05f5e94	POST	undefined	/register
+2023/12/07	19:15:26	4122a365-bcc4-443b-805e-d0d162828c29	POST	undefined	/register
