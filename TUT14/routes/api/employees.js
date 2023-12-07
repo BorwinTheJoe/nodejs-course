@@ -4,8 +4,8 @@ const employeesController = require('../../controllers/employeesController');
 const ROLES_LIST = require('../../config/roles_list');
 const verifyRoles = require('../../middleware/verifyRoles');
 
-
-router.route('/')
+router
+    .route('/')
     //requesting the employees
     .get(employeesController.getAllEmployees)
     //posting a new employee
@@ -15,8 +15,6 @@ router.route('/')
     //deleting an existing employee
     .delete(verifyRoles(ROLES_LIST.Admin, ROLES_LIST.Editor), employeesController.deleteEmployee);
 
-router.route('/:id')
-    .get(employeesController.getEmployee);
-
+router.route('/:id').get(employeesController.getEmployee);
 
 module.exports = router;
