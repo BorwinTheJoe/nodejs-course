@@ -27,9 +27,25 @@ const handleLogin = async (req, res) => {
         );
         const newRefreshToken = jwt.sign({ username: foundUser.username }, process.env.REFRESH_TOKEN_SECRET, { expiresIn: '1d' });
 
-        const newRefreshTokenArray = !cookies?.jwt ? foundUser.refreshToken : foundUser.refreshToken.filter((rt) => rt !== cookies.jwt);
+        // Changed to let keyword
+        let newRefreshTokenArray = !cookies?.jwt ? foundUser.refreshToken : foundUser.refreshToken.filter((rt) => rt !== cookies.jwt);
 
         if (cookies?.jwt) {
+            /*
+            Scenario Added here:
+                1) User logs in but never uses RT and does not logout
+                2) RT is stolen
+                3) If 1 & 2, reuse detection is needed to clear all RTs when user logs in
+            */
+            const refreshToken = cookies.jwt;
+            const foundToken = await User.findOne({ refreshToken }).exec();
+
+            if (!foundToken) {
+                console.log('attempted refresh token reuse at login!');
+                // clear out ALL previous refresh tokens
+                newRefreshTokenArray = [];
+            }
+
             res.clearCookie('jwt', {
                 httpOnly: true,
                 sameSite: 'None',
